@@ -1,7 +1,12 @@
 [workspace]
-members = ["crates/core", "crates/ui"]
 resolver = "2"
-# Every crate in the workspace will use exactly the same git revisions
+members = ["crates/*"]
+
+# These two lines keep every crate on the SAME gpui commit
 [workspace.dependencies]
-gpui = { git = "https://github.com/zed-industries/zed" }
-gpui-component = { git = "https://github.com/longbridge/gpui-component.git" }
+gpui = { git = "https://github.com/huacnlee/zed.git" }
+hex = "0.4"
+memmap2 = "0.9"
+capstone = "0.12"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
