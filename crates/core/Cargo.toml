@@ -1,0 +1,7 @@
+[package]
+name = "iceberg-core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# put your non‑UI crates here later

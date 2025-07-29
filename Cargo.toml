@@ -1,0 +1,7 @@
+[workspace]
+members = ["crates/core", "crates/ui"]
+resolver = "2"
+# Every crate in the workspace will use exactly the same git revisions
+[workspace.dependencies]
+gpui = { git = "https://github.com/zed-industries/zed" }
+gpui-component = { git = "https://github.com/longbridge/gpui-component.git" }
